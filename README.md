@@ -12,7 +12,7 @@ Not a therapist — a reflective thinking partner that helps you examine your th
 - **Socratic questioning**: 5 dimensions (Evidence, Alternatives, Decatastrophizing, Usefulness, Distancing) with heuristic mapping to distortion types
 - **10 cognitive distortions catalog**: All-or-Nothing, Overgeneralization, Mental Filter, Disqualifying the Positive, Jumping to Conclusions, Catastrophizing, Emotional Reasoning, "Should" Statements, Labeling, Personalization/Blame
 - **Bilingual**: Matches your language automatically (English or Chinese)
-- **Structured output**: Obsidian-compatible Markdown with callouts and tables
+- **Structured output**: Markdown with callouts and tables
 - **Safety protocol**: Crisis detection, escape hatch, and crisis resource links
 
 ## Install (Claude Code)
@@ -47,6 +47,21 @@ Start a CBT session by saying any of these triggers:
 **Chinese**: "认知扭曲", "思维记录", "帮我理一下", "情绪"
 
 The skill will guide you through the 7 phases at your own pace. You can stop at any time.
+
+## Auto-save Configuration
+
+By default, the skill saves session summaries to a local Markdown file. Multiple sessions per day are **appended** to the same file (separated by `---`), not overwritten.
+
+Edit the **Auto-save** section in `SKILL.md` to match your setup:
+
+**Obsidian** — point to your vault directory:
+```
+Path: /your-vault/CBT/YYYY-MM-DD.md
+```
+
+**Other note apps** (Notion, Logseq, plain files) — adjust the path to wherever you want Markdown files saved.
+
+**Output format**: Standard Markdown with callout blocks (`> [!abstract]`) and tables. Obsidian renders callouts natively; other apps will show them as blockquotes.
 
 ## File Structure
 

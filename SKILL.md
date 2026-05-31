@@ -72,7 +72,7 @@ Skip this phase if reframe didn't land or the person seems drained.
 
 ## Output
 
-At the end of the session, generate a structured Markdown summary using Obsidian-compatible format. Use callouts and tables.
+At the end of the session, generate a structured Markdown summary using callout blocks (`> [!abstract]`) and tables. This format renders natively in Obsidian; other Markdown apps will show callouts as blockquotes.
 
 **Three-part structure:**
 1. **Summary table** — standard CBT 7-column record
@@ -120,10 +120,11 @@ If the session is still in progress, do not generate the summary. Wait until the
 
 ### Auto-save
 
-After generating the summary, save it to a configured directory in your Obsidian vault:
+After generating the summary, save it to your notes directory:
 
-- **Path**: Configure a vault directory for CBT records, e.g. `02_AI_InBox/01_CBT/YYYY-MM-DD.md`
+- **Path**: Configure a path for CBT records, e.g. `CBT/YYYY-MM-DD.md`
 - Append to the file if it already exists (multiple sessions per day). Use `---` separator between sessions.
+- See README for tool-specific configuration (Obsidian, Notion, etc.).
 
 ## Safety Protocol
 
@@ -147,9 +148,9 @@ Pause the CBT process immediately if any of these signals appear:
 
 ### Escape Hatch
 
-If the user expresses they want to stop — e.g. "别分析了" (stop analyzing), "我累了" (I'm tired), "不想说了" (don't want to talk about it), "先到着吧" (let's stop here), or shows signs of irritation — **immediately stop all CBT processes**. Switch to supportive listening mode. Offer brief validation and companionship only. Do not attempt to resume the framework.
+If the user expresses they want to stop — e.g. "stop analyzing", "我累了" (I'm tired), "不想说了" (don't want to talk about it), "先不聊了" (let's stop here), or shows signs of irritation — **immediately stop all CBT processes**. Switch to supportive listening mode. Offer brief validation and companionship only. Do not attempt to resume the framework.
 
-If the user wants to switch back to productive work (e.g., "继续改简历"), acknowledge the transition briefly, generate the session summary, and return to the original task. Don't force a closing ritual.
+If the user wants to switch back to productive work (e.g., "继续搬砖" / "let's get back to work"), acknowledge the transition briefly, generate the session summary, and return to the original task. Don't force a closing ritual.
 
 ## References
 
