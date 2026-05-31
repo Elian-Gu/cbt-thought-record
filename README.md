@@ -36,7 +36,7 @@ Not using Claude Code? The core content is just structured Markdown prompts — 
 2. Include the two `references/` files when the agent asks for them (or paste them in advance)
 3. Start talking — the CBT flow is agent-agnostic
 
-Works with: Claude (web/app), ChatGPT, Gemini, Cursor, OpenCode, Aider, or any LLM-based tool.
+Works with: Claude Code or any LLM-based tool.
 
 ## Usage
 
