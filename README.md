@@ -1,8 +1,10 @@
 # cbt-thought-record
 
-A [Claude Code](https://claude.ai/code) skill that guides CBT (Cognitive Behavioral Therapy) 7-column thought record sessions through Socratic dialogue.
+A structured CBT (Cognitive Behavioral Therapy) 7-column thought record skill, designed for [Claude Code](https://claude.ai/code) and adaptable to any AI agent.
 
 Not a therapist — a reflective thinking partner that helps you examine your thoughts, not judge them.
+
+> **CBT 思维记录工具** — 通过苏格拉底式对话引导 7 列思维记录表。不是治疗师，是一个温和的思维伙伴，帮助你审视想法而非评判它们。支持中英文自动切换。专为 Claude Code 设计，也可用于任何 AI 助手。
 
 ## Features
 
@@ -13,7 +15,7 @@ Not a therapist — a reflective thinking partner that helps you examine your th
 - **Structured output**: Obsidian-compatible Markdown with callouts and tables
 - **Safety protocol**: Crisis detection, escape hatch, and crisis resource links
 
-## Install
+## Install (Claude Code)
 
 Copy (or symlink) the skill into your Claude Code skills directory:
 
@@ -25,6 +27,16 @@ git clone https://github.com/Elian-Gu/cbt-thought-record.git ~/.claude/skills/cb
 git clone https://github.com/Elian-Gu/cbt-thought-record.git ~/dev/cbt-thought-record
 ln -s ~/dev/cbt-thought-record ~/.claude/skills/cbt-thought-record
 ```
+
+## Use with other AI agents
+
+Not using Claude Code? The core content is just structured Markdown prompts — it works with any AI assistant:
+
+1. Open `SKILL.md` and paste its content as your system prompt or first message
+2. Include the two `references/` files when the agent asks for them (or paste them in advance)
+3. Start talking — the CBT flow is agent-agnostic
+
+Works with: Claude (web/app), ChatGPT, Gemini, Cursor, OpenCode, Aider, or any LLM-based tool.
 
 ## Usage
 
